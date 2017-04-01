@@ -107,6 +107,25 @@ li {
   padding: 0.5rem 0;
 }
 
-.about-container span {
+.about-container {
+  display: flex;
+  width: 960px;
+  justify-content: space-between;
+  margin: 0 auto 4rem auto;
+}
+
+.about {
+  width: 35%;
+  display: inline-block;
+}
+
+.about-title {
+  background-color: black;
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.info {
+  color: black;
   display: block;
 }
