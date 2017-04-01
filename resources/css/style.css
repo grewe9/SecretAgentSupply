@@ -26,6 +26,38 @@ header {
   height: 1.5rem;
 }
 
+.banner {
+  background-image: url("../images/moto.jpeg");
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-container {
+  width: 960px;
+  border: 1px solid red;
+  padding-top: 9rem;
+  margin: 0 auto;
+}
+
+.promo {
+  font-weight: bold;
+  background-color: black;
+  width: 20rem;
+  padding: 2rem 3rem;
+}
+
+h4 {
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
 li {
   display: inline;
 }
