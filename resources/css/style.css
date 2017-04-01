@@ -36,7 +36,6 @@ header {
 
 .banner-container {
   width: 960px;
-  border: 1px solid red;
   padding-top: 9rem;
   margin: 0 auto;
 }
@@ -56,6 +55,18 @@ h4 {
 h1 {
   font-size: 2rem;
   line-height: 2.25rem;
+}
+
+nav {
+  background-color: firebrick;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0.75rem 0;
 }
 
 li {
