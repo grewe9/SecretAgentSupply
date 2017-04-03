@@ -60,6 +60,7 @@ h1 {
 
 nav {
   background-color: firebrick;
+  padding: 0.75rem 0;
 }
 
 ul {
@@ -67,16 +68,24 @@ ul {
   justify-content: space-between;
   width: 960px;
   margin: 0 auto;
-  padding: 0.75rem 0;
 }
 
 li {
   display: inline;
 }
 
+.mobile-nav {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .item-container {
   display: flex;
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   margin: 3rem auto 4rem auto;
   justify-content: space-between;
 
@@ -109,7 +118,8 @@ li {
 
 .about-container {
   display: flex;
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   justify-content: space-between;
   margin: 0 auto 4rem auto;
 }
@@ -142,4 +152,82 @@ footer span {
   text-align: left;
   margin: 0 auto;
   padding: 2rem 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .item {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .promo {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .banner-container {
+    padding-top: 10rem;
+  }
+
+  .banner {
+    height: 15rem;
+  }
+
+  h4 {
+    font-size: 0.77rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+    line-height: 2.0;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .item {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .item-container {
+    margin: 2rem auto 3rem auto;
+  }
+
+  footer span {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 192px) {
+  .item img {
+    width: 75%;
+    height: auto;
+  }
 }
